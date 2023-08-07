@@ -1,0 +1,43 @@
+﻿@model List<MStarSupplyApp.Presentation.Models.Mercadoria.ConsultaViewModel>
+
+<div>
+    <h5>Consulta de mercadorias</h5>
+    <p>Listagem de mercadorias cadastradas.</p>
+    <hr />
+
+    <div class="mb-2">
+        <strong>@TempData["Mensagem"]</strong>
+    </div>
+
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Nome da Mercadoria</th>
+                <th>Num de Registro</th>
+                <th>Fabricante</th>
+                <th>Tipo</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.NumeroRegistro</td>
+                    <td>@item.Fabricante</td>
+                    <td>@item.Tipo</td>
+                    <td>@item.Descricao</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    Mercadorias cadastradas: @Model.Count
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>

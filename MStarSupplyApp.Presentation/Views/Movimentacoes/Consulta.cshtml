@@ -1,0 +1,53 @@
+﻿@model List<MStarSupplyApp.Presentation.Models.Movimentacao.ConsultaViewModel>
+
+<div>
+    <h5>Consulta de Movimentações</h5>
+    <p>Lista de movimentações de mercadorias.</p>
+    <hr />
+
+    <div class="mb-2">
+        <strong>@TempData["Mensagem"]</strong>
+    </div>
+
+    <div class="mb-2">
+        <a href="/Movimentacoes/RelatorioPdf" class="btn btn-outline-info">
+            Gerar relatório PDF
+        </a>
+        &nbsp;
+        <a href="/Movimentacoes/RelatorioExcel" class="btn btn-outline-info">
+            Gerar relatório Excel
+        </a>
+    </div>
+
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th>Data da Movimentação</th>
+                <th>Nome da Mercadoria</th>
+                <th>Tipo de Movimentação</th>
+                <th>Quantidade</th>
+                <th>Local</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.DataHora?.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@item.NomeMercadoria</td>
+                    <td>@item.Tipo?.ToString()</td>
+                    <td>@item.Quantidade</td>
+                    <td>@item.Local</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    Quantidade de movimentações: @Model.Count
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>

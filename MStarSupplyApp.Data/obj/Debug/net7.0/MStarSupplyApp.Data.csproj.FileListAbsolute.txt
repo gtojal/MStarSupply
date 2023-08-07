@@ -1,0 +1,14 @@
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\bin\Debug\net7.0\MStarSupplyApp.Data.deps.json
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\bin\Debug\net7.0\MStarSupplyApp.Data.runtimeconfig.json
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\bin\Debug\net7.0\MStarSupplyApp.Data.dll
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\bin\Debug\net7.0\MStarSupplyApp.Data.pdb
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\MStarSupplyApp.Data.csproj.AssemblyReference.cache
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\MStarSupplyApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\MStarSupplyApp.Data.AssemblyInfoInputs.cache
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\MStarSupplyApp.Data.AssemblyInfo.cs
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\MStarSupplyApp.Data.csproj.CoreCompileInputs.cache
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\MStarSupplyApp.Data.dll
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\refint\MStarSupplyApp.Data.dll
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\MStarSupplyApp.Data.pdb
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\MStarSupplyApp.Data.genruntimeconfig.cache
+C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Data\obj\Debug\net7.0\ref\MStarSupplyApp.Data.dll

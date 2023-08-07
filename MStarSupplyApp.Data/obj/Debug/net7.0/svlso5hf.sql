@@ -1,0 +1,46 @@
+﻿IF OBJECT_ID(N'[__EFMigrationsHistory]') IS NULL
+BEGIN
+    CREATE TABLE [__EFMigrationsHistory] (
+        [MigrationId] nvarchar(150) NOT NULL,
+        [ProductVersion] nvarchar(32) NOT NULL,
+        CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+    );
+END;
+GO
+
+BEGIN TRANSACTION;
+GO
+
+CREATE TABLE [MERCADORIA] (
+    [ID] uniqueidentifier NOT NULL,
+    [NOME] nvarchar(150) NOT NULL,
+    [NUMEROREGISTRO] int NOT NULL,
+    [FABRICANTE] nvarchar(100) NOT NULL,
+    [TIPO] nvarchar(100) NOT NULL,
+    [DESCRICAO] nvarchar(500) NOT NULL,
+    CONSTRAINT [PK_MERCADORIA] PRIMARY KEY ([ID])
+);
+GO
+
+CREATE TABLE [MOVIMENTACAO] (
+    [ID] uniqueidentifier NOT NULL,
+    [QUANTIDADE] int NOT NULL,
+    [DATAHORA] datetime2 NOT NULL,
+    [LOCAL] nvarchar(max) NOT NULL,
+    [MERCADORIAID] uniqueidentifier NOT NULL,
+    [TIPO] int NOT NULL,
+    CONSTRAINT [PK_MOVIMENTACAO] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_MOVIMENTACAO_MERCADORIA_MERCADORIAID] FOREIGN KEY ([MERCADORIAID]) REFERENCES [MERCADORIA] ([ID])
+);
+GO
+
+CREATE INDEX [IX_MOVIMENTACAO_MERCADORIAID] ON [MOVIMENTACAO] ([MERCADORIAID]);
+GO
+
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20230805201341_Initial', N'7.0.9');
+GO
+
+COMMIT;
+GO
+

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mstar Supply</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MStar Supply</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" color="#333">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Index">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="mercadoriasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Mercadorias
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="mercadoriasDropdown">
+                            <li><a class="dropdown-item" href="/Mercadorias/Cadastro">Cadastro</a></li>
+                            <li><a class="dropdown-item" href="/Mercadorias/Consulta">Consulta</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="movimentacoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Movimentações
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="movimentacoesDropdown">
+                            <li><a class="dropdown-item" href="/Movimentacoes/Cadastro">Cadastro</a></li>
+                            <li><a class="dropdown-item" href="/Movimentacoes/Consulta">Consulta</a></li>
+                            <li><a class="dropdown-item" href="/Movimentacoes/Grafico">Gráfico</a></li>
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Movimentacoes" asp-action="Index">Gráfico</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="m-4">
+        <div class="card">
+            <div class="card-body">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/charts/loader.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

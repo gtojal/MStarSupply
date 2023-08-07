@@ -1,0 +1,49 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MStarSupplyApp.Presentation
+build_property.RootNamespace = MStarSupplyApp.Presentation
+build_property.ProjectDir = C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Presentation\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Tojal\Desktop\C#\MStarSupplyApp\MStarSupplyApp.Presentation
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Tojal/Desktop/C\#/MStarSupplyApp/MStarSupplyApp.Presentation/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tojal/Desktop/C\#/MStarSupplyApp/MStarSupplyApp.Presentation/Views/Mercadorias/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyY2Fkb3JpYXNcQ2FkYXN0cm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tojal/Desktop/C\#/MStarSupplyApp/MStarSupplyApp.Presentation/Views/Mercadorias/Consulta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVyY2Fkb3JpYXNcQ29uc3VsdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tojal/Desktop/C\#/MStarSupplyApp/MStarSupplyApp.Presentation/Views/Movimentacoes/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xDYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tojal/Desktop/C\#/MStarSupplyApp/MStarSupplyApp.Presentation/Views/Movimentacoes/Consulta.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xDb25zdWx0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tojal/Desktop/C\#/MStarSupplyApp/MStarSupplyApp.Presentation/Views/Movimentacoes/Grafico.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aW1lbnRhY29lc1xHcmFmaWNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tojal/Desktop/C\#/MStarSupplyApp/MStarSupplyApp.Presentation/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Tojal/Desktop/C\#/MStarSupplyApp/MStarSupplyApp.Presentation/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

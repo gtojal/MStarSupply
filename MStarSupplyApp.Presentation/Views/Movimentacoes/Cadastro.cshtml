@@ -1,0 +1,66 @@
+﻿@model MStarSupplyApp.Presentation.Models.Movimentacao.CadastroViewModel
+
+<div>
+    <h5>Cadastro de movimentações (Entrada/Saída)</h5>
+    <p>Preencha os dados para incluir uma movimentação</p>
+    <hr />
+
+    <div class="mb-2">
+        <strong>@TempData["Mensagem"]</strong>
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        <div class="row mb-2">
+            <div class="col-md-5">
+                <label>Mercadoria:</label>
+                @Html.DropDownListFor(model => model.MercadoriaId, 
+                    ViewBag.Mercadorias as List<SelectListItem> , "Escolha uma mercadoria", 
+                    new { @class = "form-select" })
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.MercadoriaId)
+                </span>
+            </div>
+            <div class="col-md-2">
+                <label>Tipo:</label>
+                @Html.DropDownListFor(model => model.Tipo,
+                    ViewBag.Tipos as SelectList , "Escolha o tipo",
+                    new { @class = "form-select" })
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.Tipo)
+                </span>
+            </div>
+            <div class="col-md-2">
+                <label>Quantidade:</label>
+                @Html.TextBoxFor(model => model.Quantidade, new { @class = "form-control", @type = "number" })
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.Quantidade)
+                </span>
+            </div>
+            <div class="col-md-3">
+                <label>Data e Hora:</label>
+                @Html.TextBoxFor(model => model.DataHora, new { @class = "form-control", @type = "datetime-local" })
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.DataHora)
+                </span>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-5">
+                <label>Local:</label>
+                @Html.TextBoxFor(model => model.Local, new { @class = "form-control" })
+                <span class="text-danger">
+                    @Html.ValidationMessageFor(model => model.Local)
+                </span>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success" value="Realizar Cadastro" />
+            </div>
+        </div>
+    }
+
+</div>
